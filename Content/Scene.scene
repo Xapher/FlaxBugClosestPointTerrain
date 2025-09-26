@@ -1,0 +1,549 @@
+{
+	"ID": "74a68a984824b4510d12589f199ad68f",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6705,
+	"Data": [
+		{
+			"ID": "74a68a984824b4510d12589f199ad68f",
+			"TypeName": "FlaxEngine.Scene",
+			"LightmapSettings": {
+				"IndirectLightingIntensity": 1.0,
+				"GlobalObjectsScale": 1.0,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"CompressLightmaps": true,
+				"UseGeometryWithNoMaterials": true,
+				"Quality": 100
+			}
+		},
+		{
+			"ID": "6ff0581d474c84230b3d0fa9f17e0972",
+			"TypeName": "ExitOnEsc",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"V": {}
+		},
+		{
+			"ID": "f58b541c4f2f2a1c4bfda3958e920018",
+			"TypeName": "VoronoiComputeTerrain.ClosestPointOnSpline",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"V": {
+	"t": "4de342ec42ae3a99e628bda0c66c2424",
+	"s": "d98015c243b4c79a1aa4169efc5f656c",
+	"steps": 413
+}
+		},
+		{
+			"ID": "28553d634087c67c711ebd96080482aa",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Visuals"
+		},
+		{
+			"ID": "bc81376747666609b0974580a21519a1",
+			"TypeName": "FlaxEngine.Sky",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": -69.65292358398438,
+					"Y": 124.01800537109375,
+					"Z": 35.34806823730469
+				}
+			},
+			"Sun": "deecf0894777293a4f478dadacf2a6f8",
+			"SunPower": 10.0
+		},
+		{
+			"ID": "da5e1c454a56377517d41686ebb0348f",
+			"TypeName": "FlaxEngine.EnvironmentProbe",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "Environment Probe",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 249.3258056640625,
+					"Z": 0.0
+				}
+			},
+			"ProbeID": "1e1fb3a7447c1265b15967b480549d98"
+		},
+		{
+			"ID": "deecf0894777293a4f478dadacf2a6f8",
+			"TypeName": "FlaxEngine.DirectionalLight",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "Directional Light",
+			"Transform": {
+				"Translation": {
+					"X": -1.6893305778503418,
+					"Y": 267.7931823730469,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.5176515579223633,
+					"Y": 0.0833025798201561,
+					"Z": 0.06534233689308167,
+					"W": 0.8490158915519714
+				}
+			},
+			"Color": {
+				"R": 1.0,
+				"G": 0.9770245552062988,
+				"B": 0.8860000371932983,
+				"A": 1.0
+			}
+		},
+		{
+			"ID": "eb18e84d41670d6314174b89a1d5ffea",
+			"TypeName": "FlaxEngine.SkyLight",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "SkyLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"BakedProbe": "1c0e10484ff57d402275289550564b9f",
+			"Mode": 0
+		},
+		{
+			"ID": "b0d72c3746caebca055e1f921ca21c7c",
+			"TypeName": "FlaxEngine.Camera",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": -198.75326538085938,
+					"Y": 196.89071655273438,
+					"Z": 190.70037841796875
+				},
+				"Orientation": {
+					"X": 0.06189095228910446,
+					"Y": 0.9198267459869385,
+					"Z": -0.1617070734500885,
+					"W": 0.35204988718032837
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "9053ad38428b10594c741db78d7fcca5",
+			"TypeName": "FreeCamera",
+			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
+			"V": {}
+		},
+		{
+			"ID": "4de342ec42ae3a99e628bda0c66c2424",
+			"TypeName": "FlaxEngine.Terrain",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Terrain",
+			"Transform": {
+				"Translation": {
+					"X": -25000.0,
+					"Y": 0.0,
+					"Z": -25000.0
+				}
+			},
+			"LODCount": 6,
+			"ChunkSize": 127,
+			"Patches": [
+				{
+					"X": 0,
+					"Z": 0,
+					"Offset": -0.000015259021893143654,
+					"Height": 5951.59130859375,
+					"Heightmap": "60ef848945e99179a156608fca1bc624",
+					"Splatmap0": "00000000000000000000000000000000",
+					"Splatmap1": "00000000000000000000000000000000",
+					"Heightfield": "8fa9f62b4668535e3f209d8573c91fac",
+					"Chunks": [
+						{
+							"Offset": 0.0,
+							"Height": 3810.22314453125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 3519.44384765625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 2924.3515625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 2102.38427734375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 3728.114501953125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 1712.878173828125,
+							"Height": 4238.712890625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 838.50048828125,
+							"Height": 5086.50048828125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 3038.359619140625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 3729.075439453125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 1290.22412109375,
+							"Height": 4474.345703125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 1070.55810546875,
+							"Height": 4422.4609375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 3749.20654296875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 2969.356689453125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 3163.034912109375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 3414.22314453125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 3073.222900390625,
+							"Material": "00000000000000000000000000000000"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "d98015c243b4c79a1aa4169efc5f656c",
+			"TypeName": "FlaxEngine.Spline",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Spline",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 1156.8671875,
+					"Z": 24637.82421875
+				}
+			},
+			"Curve": {
+				"Keyframes": [
+					{
+						"Time": 0.0,
+						"Value": {
+							"Translation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						},
+						"TangentIn": {
+							"Translation": {
+								"X": -6860.0,
+								"Y": -3748.0,
+								"Z": 17404.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						},
+						"TangentOut": {
+							"Translation": {
+								"X": 6860.0,
+								"Y": 3748.0,
+								"Z": -17404.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						}
+					},
+					{
+						"Time": 0.25,
+						"Value": {
+							"Translation": {
+								"X": 1715.0,
+								"Y": 937.0,
+								"Z": -4351.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						},
+						"TangentIn": {
+							"Translation": {
+								"X": 24466.0,
+								"Y": -5818.0,
+								"Z": 38830.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						},
+						"TangentOut": {
+							"Translation": {
+								"X": -24466.0,
+								"Y": 5818.0,
+								"Z": -38830.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						}
+					},
+					{
+						"Time": 0.5,
+						"Value": {
+							"Translation": {
+								"X": -12233.0,
+								"Y": 2909.0,
+								"Z": -19415.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						},
+						"TangentIn": {
+							"Translation": {
+								"X": 3430.0,
+								"Y": -6068.0,
+								"Z": 43684.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						},
+						"TangentOut": {
+							"Translation": {
+								"X": -3430.0,
+								"Y": 6068.0,
+								"Z": -43684.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						}
+					},
+					{
+						"Time": 0.75,
+						"Value": {
+							"Translation": {
+								"X": 0.0,
+								"Y": 3971.0,
+								"Z": -26193.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						},
+						"TangentIn": {
+							"Translation": {
+								"X": -48932.0,
+								"Y": -4248.0,
+								"Z": 27112.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						},
+						"TangentOut": {
+							"Translation": {
+								"X": 48932.0,
+								"Y": 4248.0,
+								"Z": -27112.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						}
+					},
+					{
+						"Time": 1.0,
+						"Value": {
+							"Translation": {
+								"X": 10789.0,
+								"Y": 3971.0,
+								"Z": -30791.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						},
+						"TangentIn": {
+							"Translation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						},
+						"TangentOut": {
+							"Translation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0
+							},
+							"Orientation": {
+								"X": 0.0,
+								"Y": 0.0,
+								"Z": 0.0,
+								"W": 1.0
+							},
+							"Scale": {
+								"X": 1.0,
+								"Y": 1.0,
+								"Z": 1.0
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}
